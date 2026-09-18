@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Programming Test | Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="auth-page">
+    <div class="page-shell">
+      <div class="brand-panel">
+        <div class="brand-badge">Python Test Platform</div>
+        <h1>Python Programming<br />Final Assessment</h1>
+        <p>
+          Build confidence in Python fundamentals through a structured final test based on the one-month course syllabus.
+        </p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <span>18 MCQ</span>
+            <small>Concept-driven questions</small>
+          </div>
+          <div class="feature-item">
+            <span>2 Programs</span>
+            <small>Beginner coding tasks</small>
+          </div>
+          <div class="feature-item">
+            <span>20 Marks</span>
+            <small>Timed, browser-based exam</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="login-card">
+        <div class="card-header">
+          <h2>Welcome Back</h2>
+          <p>Sign in to continue your exam</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+          </div>
+
+          <div class="field password-field">
+            <label for="password">Password</label>
+            <div class="password-wrap">
+              <input id="password" name="password" type="password" placeholder="Enter your password" required />
+              <button type="button" class="toggle-password" data-password-toggle>Show</button>
+            </div>
+          </div>
+
+          <div id="loginError" class="form-error" aria-live="polite"></div>
+          <button type="submit" class="primary-btn full-width">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

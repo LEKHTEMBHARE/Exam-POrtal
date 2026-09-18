@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="feedback-page">
+    <main class="feedback-shell">
+      <div class="feedback-card">
+        <h1>Feedback Form</h1>
+        <p>Please complete the form before finishing.</p>
+
+        <form id="feedbackForm" class="feedback-form">
+          <div class="field">
+            <label for="studentName">Student Name</label>
+            <input id="studentName" name="studentName" type="text" required />
+          </div>
+
+          <div class="field">
+            <label>Course Experience Rating</label>
+            <div class="stars" data-rating="courseExperience" required>
+              <button type="button" class="star" data-rating-value="1">★</button>
+              <button type="button" class="star" data-rating-value="2">★</button>
+              <button type="button" class="star" data-rating-value="3">★</button>
+              <button type="button" class="star" data-rating-value="4">★</button>
+              <button type="button" class="star" data-rating-value="5">★</button>
+            </div>
+            <input type="hidden" id="courseExperience" name="courseExperience" />
+          </div>
+
+          <div class="field grid-two">
+            <div>
+              <label for="testDifficulty">Test Difficulty</label>
+              <select id="testDifficulty" name="testDifficulty" required>
+                <option value="">Select</option>
+                <option>Easy</option>
+                <option>Moderate</option>
+                <option>Challenging</option>
+              </select>
+            </div>
+            <div>
+              <label for="questionQuality">Question Quality</label>
+              <select id="questionQuality" name="questionQuality" required>
+                <option value="">Select</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field grid-two">
+            <div>
+              <label for="timeManagement">Time Management</label>
+              <select id="timeManagement" name="timeManagement" required>
+                <option value="">Select</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Fair</option>
+                <option>Poor</option>
+              </select>
+            </div>
+            <div>
+              <label for="websiteExperience">Website Experience</label>
+              <select id="websiteExperience" name="websiteExperience" required>
+                <option value="">Select</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="liked">What did you like?</label>
+            <textarea id="liked" name="liked" rows="3" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="improvements">What can be improved?</label>
+            <textarea id="improvements" name="improvements" rows="3" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="suggestions">Suggestions</label>
+            <textarea id="suggestions" name="suggestions" rows="3" required></textarea>
+          </div>
+
+          <div id="feedbackError" class="form-error" aria-live="polite"></div>
+          <button type="submit" class="primary-btn full-width">Submit Feedback</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/feedback.js"></script>
+  </body>
+</html>

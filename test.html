@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Test</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="exam-page">
+    <header class="exam-header">
+      <div>
+        <p class="eyebrow">Python Programming Final Test</p>
+        <h2 id="questionNumber">Question 1 of 20</h2>
+      </div>
+      <div class="timer-box">
+        <span>Time Left</span>
+        <strong id="timerValue">00:10</strong>
+      </div>
+    </header>
+
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>Progress</span>
+        <strong id="progressText">1 / 20</strong>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 5%"></div>
+      </div>
+    </div>
+
+    <main class="exam-layout">
+      <section class="question-panel">
+        <div id="testWarning" class="warning-box hidden"></div>
+        <div class="question-card">
+          <div id="questionMeta" class="question-meta"></div>
+          <h3 id="questionText"></h3>
+          <div id="answerOptions" class="answer-options"></div>
+          <div id="programmingWrap" class="programming-wrap hidden"></div>
+        </div>
+      </section>
+
+      <aside class="sidebar-panel">
+        <h3>Question Navigator</h3>
+        <div id="questionNavigator" class="question-navigator"></div>
+        <div class="nav-actions">
+          <button id="prevBtn" class="secondary-btn">Previous</button>
+          <button id="nextBtn" class="primary-btn">Next</button>
+        </div>
+        <button id="submitBtn" class="danger-btn full-width">Submit Test</button>
+      </aside>
+    </main>
+
+    <div id="submitModal" class="modal">
+      <div class="modal-card">
+        <h3>Are you sure you want to submit your test?</h3>
+        <div class="modal-stats">
+          <div><span>Attempted</span><strong id="attemptedCount">0</strong></div>
+          <div><span>Unattempted</span><strong id="unattemptedCount">0</strong></div>
+          <div><span>Remaining</span><strong id="remainingCount">0</strong></div>
+        </div>
+        <div class="modal-actions">
+          <button id="cancelSubmitBtn" class="secondary-btn">Cancel</button>
+          <button id="confirmSubmitBtn" class="primary-btn">Submit Test</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/test.js"></script>
+  </body>
+</html>
